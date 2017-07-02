@@ -1,7 +1,7 @@
 {
-  "name": "ember-cli-swagger-blueprints",
+  "name": "ember-cli-openapi-generate",
   "version": "0.0.2",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Automatically generate Ember models from OpenAPI definitions.",
   "keywords": [
     "ember-addon"
   ],
