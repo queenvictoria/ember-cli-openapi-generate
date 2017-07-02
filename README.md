@@ -1,5 +1,14 @@
 # ember-cli-swagger-blueprints
 
+Generate Ember models from a swagger schema.
+
+```
+$ ember swagger https://example.com/api/swagger.io
+```
+
+* https://Swagger.io
+
+
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
