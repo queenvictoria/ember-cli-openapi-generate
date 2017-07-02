@@ -3,11 +3,11 @@
 
 
 module.exports = {
-  name: 'ember-cli-swagger-blueprints',
+  name: 'ember-cli-openapi-generate',
 
   includedCommands: function() {
     return {
-      'swagger': require('./lib/commands/swagger'),
+      'openapi': require('./lib/commands/openapi'),
     };
   },
 

@@ -1,20 +1,30 @@
-# ember-cli-swagger-blueprints
+# ember-cli-openapi-generate
 
-Generate Ember models from a swagger schema.
+Generate Ember models from a openapi schema.
+
+## Usage
 
 ```
-$ ember swagger https://example.com/api/swagger.io
+$ ember openapi https://example.com/api/swagger.io
 ```
+### Options
 
-* https://Swagger.io
+(Under development)
 
+* `--cli` Only generate `ember g model` style output
+* `--update` Overwrite existing models
+
+## References
+
+* https://swagger.io
+* https://github.com/OAI/OpenAPI-Specification
 
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ember-cli-swagger-blueprints`
+* `cd ember-cli-openapi-generate`
 * `npm install`
 * `bower install`
 
