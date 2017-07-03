@@ -3,15 +3,21 @@
   "version": "0.0.5",
   "description": "Automatically generate Ember models from OpenAPI definitions.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "openapi",
+    "jsonapi",
+    "ember-cli"
   ],
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name" : "Snow",
+    "email" : "snow@hollysydney.com"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "queenvictoria/ember-cli-openapi-generate",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
