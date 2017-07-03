@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
+    "ember-data": "^2.14.3",
     "lodash": "^4.17.4",
     "q": "^1.5.0",
     "request": "^2.81.0"
