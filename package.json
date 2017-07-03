@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-openapi-generate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Automatically generate Ember models from OpenAPI definitions.",
   "keywords": [
     "ember-addon"
