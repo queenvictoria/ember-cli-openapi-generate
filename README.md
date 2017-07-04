@@ -12,8 +12,7 @@ $ ember openapi https://example.com/api/swagger.json
 (Under development)
 
 * `--cli` Only generate `ember g model` style output
-* `--resource` Use resources rather than models (model, route, template).
-* `--update` Overwrite existing models
+* `--resource` Use resources (`ember g resource`) rather than models (model, route, template).
 
 ## Rationale
 
