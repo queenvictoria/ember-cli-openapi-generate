@@ -11,7 +11,11 @@ ember install ember-cli-openapi-generate
 ## Usage
 
 ```
+# Generate from a web-accessible swagger.json
 $ ember openapi https://example.com/api/swagger.json
+
+# Or, generate from a local file
+$ ember openapi /path/to/your/swagger.json
 ```
 ### Options
 
