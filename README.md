@@ -23,6 +23,7 @@ $ ember openapi /path/to/your/swagger.json
 
 * `--cli` Only generate `ember g model` style output
 * `--resource` Use resources (`ember g resource`) rather than models (model, route, template).
+* `--arraytype` Use this when you have an array transform created and want to have regular string/int arrays as attribute type via parsing models through openapi.json files. Example usage: $ ember openapi http://petstore.swagger.io/v2/swagger.json --arraytype
 
 ## Rationale
 
