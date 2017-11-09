@@ -10,19 +10,48 @@ ember install ember-cli-openapi-generate
 
 ## Usage
 
+Generate from a web-accessible swagger.json
 ```
-# Generate from a web-accessible swagger.json
-$ ember openapi https://example.com/api/swagger.json
+$ ember openapi http://petstore.swagger.io/v2/swagger.json
+```
 
-# Or, generate from a local file
+Or, generate from a local file
+```
 $ ember openapi /path/to/your/swagger.json
 ```
+
+
+An arraytype option is available. Use this when you have an array transform created and want to have regular string/int arrays as attribute type when parsing models through openapi.json files.
+```
+$ ember openapi http://petstore.swagger.io/v2/swagger.json --arraytype
+```
+
+The difference between a regular generate command and the arraytype generate command is shown in the following example.
+```diff
+diff --git a/app/models/pet.js b/app/models/pet.js
+index 6249237..517e5c2 100644
+--- a/app/models/pet.js
++++ b/app/models/pet.js
+@@ -3,7 +3,7 @@ import DS from 'ember-data';
+ export default DS.Model.extend({
+   category: DS.belongsTo('category'),
+   name: DS.attr('string'),
+-  photoUrls: DS.hasMany('photo-url'),
++  photoUrls: DS.attr('array'),
+   tags: DS.hasMany('tag'),
+   status: DS.attr('string')
+ });
+```
+
+
 ### Options
 
 (Under development)
 
-* `--cli` Only generate `ember g model` style output
-* `--resource` Use resources (`ember g resource`) rather than models (model, route, template).
+* `--cli` Only generate `ember g model` style output.
+* `--resource` Use resources (`ember g resource`) rather than only models (which will create models, routes and templates).
+* `--arraytype ` Use an array transform (see Usage notes).
+
 
 ## Rationale
 
